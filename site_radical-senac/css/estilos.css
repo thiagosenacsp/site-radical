@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Regras usando o fluxo de trabalho mobile-first */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../imagens/hypnotize.png);
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Regra para títulos e parágrafos (Reset customizado)
+Removemos os espaçamentos deste elementos */
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Regra para todas as imagens */
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Regra de Menu de navegação */
+/* Ativamos o elemento flex para o alinhamento
+horizontal e vertical do conteúdo */
+
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  z-index: 1000;
+  background-color: #18381d;
+  border-bottom: solid 1px;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 40px;
+}
+
+nav a {
+  padding: 14px 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav a:link,
+nav a:visited {
+  transition: background-color 1s;
+  min-height: inherit;
+  padding: 14px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a:hover {
+  background-color: #a98e12;
+  transition: background-color 1s;
+  color: black;
+  border-radius: 5%;
+}
+
+#conteudo {
+  max-width: 100%;
+  margin: auto;
+}
+
+#conteudo p {
+  font-size: 1.1em;
+}
+
+.titulo {
+  color: #ed6d19;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#destaque {
+  max-height: 500px;
+  height: 100%;
+}
+
+#destaque img {
+  border-bottom: dotted #ed6d19 5px;
+}
+
+.text-destaque {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 90px;
+  bottom: 140px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.text-destaque h2 {
+  font-size: 2em !important;
+  margin-top: 5px;
+  padding: 5px 0 3px 50px;
+}
+
+text-destaque p {
+  margin-top: 5px;
+  font-size: 1.1em;
+  padding: 0 0 5px 50px;
+}
+
+#frase {
+  color: white;
+  background-color: #ed6d19;
+  text-align: center;
+  height: 80px;
+}
+
+#frase p {
+  font-size: 1.3em;
+  padding: 20px;
+}
+
+footer img {
+  width: 100px;
+}
+
+.card {
+  margin: 15px 0;
+  padding: 5px;
+}
+
+.card p {
+  padding: 1% 0 2% 0;
+  text-align: center;
+}
+
+.card-conteudo figure {
+  position: relative;
+  width: 50%;
+  margin: 1%;
+}
+
+.card-conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-conteudo img {
+  box-shadow: gray 1px 1px 5px;
+}
+
+.card-conteudo a img {
+  transition: 1s;
+  filter: opacity(0.5);
+}
+
+.card-conteudo figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(127, 127, 128, 0.8);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card-conteudo a:hover img,
+.card-conteudo a:focus img {
+  filter: opacity(1);
+}
+
+#titulo-video {
+  color: white;
+  padding: 15px;
+}
+
+#video {
+  width: 100%;
+  background-color: rgba(6, 99, 46, 0.5);
+  text-align: center;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  padding: 2% 0 8% 0;
+  max-width: 80%;
+}
+
+.conteudo-info {
+  padding-top: 20%;
+}
+
+.conteudo-info p {
+  margin: 2% 12% 10%;
+}
+
+#card-pacote {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(6, 99, 46, 0.5);
+  text-align: center;
+}
+
+.card-pacote-info {
+  max-width: 300px;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: gray 1px 1px 5px;
+  background-color: white;
+}
+
+.card-pacote-info h3 {
+  padding: 1%;
+  text-align: left;
+}
+
+.card-pacote-info p {
+  padding: 3% 2px;
+  text-align: justify;
+}
+
+.pac-flex {
+  display: flex;
+  margin-top: 15px;
+}
+
+.pac-fotos, .pac-reserva {
+  width: 100px;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: black;
+  background-color: #a98e12;
+}
+
+.pac-fotos a, .pac-reserva a {
+  width: 100px;
+  padding: 5px;
+  color: black;
+}
+
+.pac-fotos a:hover, .pac-reserva a:hover {
+  width: 100px;
+  padding: 5px;
+  background-color: #ECDA87;
+  color: white;
+  transition: background-color 1s;
+  border-radius: 5%;
+}
+
+.pac-fotos a:link, .pac-reserva a:link,
+.pac-fotos a:visited, .pac-reserva a:visited {
+  transition: background-color 2s;
+  color: black;
+  min-height: inherit;
+  padding: 5px;
+}
+
