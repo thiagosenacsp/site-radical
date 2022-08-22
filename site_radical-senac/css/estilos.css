@@ -299,3 +299,72 @@ iframe {
   padding: 5px;
 }
 
+.acessorios {
+  display: flex;
+  margin: auto;
+  width: 88%;
+  padding: 15px;
+}
+
+.produtos img {
+  max-width: 100px;
+  border: solid #7f7f80 3px;
+  border-radius: 100%;
+  box-shadow: grey 1px 1px 5px;
+  margin: 10%;
+}
+
+.produtos {
+  box-shadow: grey 1px 1px 5px;
+  text-align: center;
+  padding: 20px;
+  width: 230px;
+  background-color: white;
+  margin: 1%;
+  border-radius: 5px;
+}
+
+.produtos h4 {
+  color: #ed6d19;
+  text-transform: uppercase;
+}
+
+.img-produto {
+  width: 150px;
+  height: 150px;
+}
+
+.acesse {
+  text-transform: uppercase;
+  background-color: #ed6d19;
+  width: 100px;
+  height: 25px;
+  padding: 3px;
+  margin: 8px auto;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+#conteudo-contato {
+  display: flex;
+}
+
+.cont-contato {
+  width: 400px;
+  margin: 3%;
+}
+
+.formulario h2,
+.formulario p,
+form {
+  text-align: right;
+  margin: 1%;
+}
+
+.localizacao h2,
+.localizacao p,
+.localizacao iframe {
+  text-align: left;
+  margin: 1%;
+}
