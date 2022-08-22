@@ -132,11 +132,12 @@ nav a:hover {
 
 .text-destaque h2 {
   font-size: 2em !important;
+  color: black !important;
   margin-top: 5px;
   padding: 5px 0 3px 50px;
 }
 
-text-destaque p {
+.text-destaque p {
   margin-top: 5px;
   font-size: 1.1em;
   padding: 0 0 5px 50px;
@@ -170,6 +171,7 @@ footer img {
 
 .card-conteudo figure {
   position: relative;
+  box-shadow: gray 1px 1px 5px; ;
   width: 50%;
   margin: 1%;
 }
@@ -367,4 +369,51 @@ form {
 .localizacao iframe {
   text-align: left;
   margin: 1%;
+}
+
+button {
+  border: none;
+  background-color: #ed6d19;
+  height: 30px;
+  margin-left: 40px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: gray 1px 1px 5px;
+  padding-inline: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #a98e12;
+}
+
+.rodape {
+  border-top: solid #06632E 5px;
+  background-color: black;
+  color: #7f7f80;
+}
+
+.rodape-conteudo {
+  display: flex;
+  margin-left: 10%;
+}
+
+.rodape-conteudo ul{
+  list-style-type: none;
+}
+
+#logo-rodape {
+  max-width: 150px;
+  margin: 3%;
+}
+
+.menu-rodape {
+  text-decoration: none;
+  color: #7f7f80;
+}
+
+.menu-rodape a:hover {
+  color: white;
 }
