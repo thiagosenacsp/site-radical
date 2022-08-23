@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 /* Regras usando o fluxo de trabalho mobile-first */
 
@@ -155,10 +155,6 @@ nav a:hover {
   padding: 20px;
 }
 
-footer img {
-  width: 100px;
-}
-
 .card {
   margin: 15px 0;
   padding: 5px;
@@ -171,7 +167,7 @@ footer img {
 
 .card-conteudo figure {
   position: relative;
-  box-shadow: gray 1px 1px 5px; ;
+  box-shadow: gray 1px 1px 5px;
   width: 50%;
   margin: 1%;
 }
@@ -267,7 +263,8 @@ iframe {
   margin-top: 15px;
 }
 
-.pac-fotos, .pac-reserva {
+.pac-fotos,
+.pac-reserva {
   width: 100px;
   padding: 5px;
   border-radius: 3px;
@@ -278,23 +275,27 @@ iframe {
   background-color: #a98e12;
 }
 
-.pac-fotos a, .pac-reserva a {
+.pac-fotos a,
+.pac-reserva a {
   width: 100px;
   padding: 5px;
   color: black;
 }
 
-.pac-fotos a:hover, .pac-reserva a:hover {
+.pac-fotos a:hover,
+.pac-reserva a:hover {
   width: 100px;
   padding: 5px;
-  background-color: #ECDA87;
+  background-color: #ecda87;
   color: white;
   transition: background-color 1s;
   border-radius: 5%;
 }
 
-.pac-fotos a:link, .pac-reserva a:link,
-.pac-fotos a:visited, .pac-reserva a:visited {
+.pac-fotos a:link,
+.pac-reserva a:link,
+.pac-fotos a:visited,
+.pac-reserva a:visited {
   transition: background-color 2s;
   color: black;
   min-height: inherit;
@@ -390,17 +391,18 @@ button:hover {
 }
 
 .rodape {
-  border-top: solid #06632E 5px;
+  border-top: solid #06632e 5px;
   background-color: black;
   color: #7f7f80;
 }
 
 .rodape-conteudo {
   display: flex;
-  margin-left: 10%;
+  align-items: center;
+  margin: 10px 0 10px 10%;
 }
 
-.rodape-conteudo ul{
+.rodape-conteudo ul {
   list-style-type: none;
 }
 
@@ -409,11 +411,32 @@ button:hover {
   margin: 3%;
 }
 
-.menu-rodape {
+.menu-rodape a {
   text-decoration: none;
   color: #7f7f80;
 }
 
 .menu-rodape a:hover {
   color: white;
+}
+
+.redes img {
+  min-width: 30px;
+}
+
+.redes ul {
+  display: flex;
+  text-align: center;
+}
+
+.redes li {
+  width: 15%;
+  padding: 3%;
+}
+
+.assinatura {
+  color: white;
+  background-color: #7f7f80;
+  text-align: center;
+  height: 40px;
 }
