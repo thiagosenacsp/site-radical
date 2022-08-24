@@ -49,10 +49,10 @@ horizontal e vertical do conteúdo */
 header {
   display: flex;
   position: fixed;
-  justify-content: space-around;
-  align-items: center;
   height: 70px;
   width: 100%;
+  justify-content: space-around;
+  align-items: center;
   z-index: 1000;
   background-color: #18381d;
   border-bottom: solid 1px;
@@ -81,18 +81,18 @@ nav a {
 
 nav a:link,
 nav a:visited {
-  transition: background-color 1s;
-  min-height: inherit;
   padding: 14px 25px;
+  min-height: inherit;
   align-items: center;
   justify-content: center;
+  transition: background-color 1s;
 }
 
 nav a:hover {
-  background-color: #a98e12;
+  border-radius: 5%;
   transition: background-color 1s;
   color: black;
-  border-radius: 5%;
+  background-color: #a98e12;
 }
 
 #conteudo {
@@ -123,36 +123,36 @@ nav a:hover {
 
 .text-destaque {
   position: relative;
-  background-color: rgba(255, 255, 255, 0.8);
-  height: 90px;
   bottom: 140px;
   width: 100%;
+  height: 90px;
   margin-top: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .text-destaque h2 {
-  font-size: 2em !important;
-  color: black !important;
   margin-top: 5px;
   padding: 5px 0 3px 50px;
+  font-size: 2em !important;
+  color: black !important;
 }
 
 .text-destaque p {
   margin-top: 5px;
-  font-size: 1.1em;
   padding: 0 0 5px 50px;
+  font-size: 1.1em;
 }
 
 #frase {
+  height: 80px;
+  text-align: center;
   color: white;
   background-color: #ed6d19;
-  text-align: center;
-  height: 80px;
 }
 
 #frase p {
-  font-size: 1.3em;
   padding: 20px;
+  font-size: 1.3em;
 }
 
 .card {
@@ -167,9 +167,9 @@ nav a:hover {
 
 .card-conteudo figure {
   position: relative;
-  box-shadow: gray 1px 1px 5px;
   width: 50%;
   margin: 1%;
+  box-shadow: gray 1px 1px 5px;
 }
 
 .card-conteudo {
@@ -181,11 +181,6 @@ nav a:hover {
 
 .card-conteudo img {
   box-shadow: gray 1px 1px 5px;
-}
-
-.card-conteudo a img {
-  transition: 1s;
-  filter: opacity(0.5);
 }
 
 .card-conteudo figcaption {
@@ -203,12 +198,13 @@ nav a:hover {
 
 .card-conteudo a:hover img,
 .card-conteudo a:focus img {
-  filter: opacity(1);
+  transition: 1s;
+  filter: opacity(0.5);
 }
 
 #titulo-video {
-  color: white;
   padding: 15px;
+  color: white;
 }
 
 #video {
@@ -220,8 +216,8 @@ nav a:hover {
 iframe {
   display: block;
   margin: auto;
-  padding: 2% 0 8% 0;
   max-width: 80%;
+  padding: 2% 0 8% 0;
 }
 
 .conteudo-info {
@@ -261,6 +257,7 @@ iframe {
 .pac-flex {
   display: flex;
   margin-top: 15px;
+  justify-content: space-evenly;
 }
 
 .pac-fotos,
@@ -296,10 +293,10 @@ iframe {
 .pac-reserva a:link,
 .pac-fotos a:visited,
 .pac-reserva a:visited {
-  transition: background-color 2s;
-  color: black;
   min-height: inherit;
   padding: 5px;
+  transition: background-color 2s;
+  color: black;
 }
 
 .acessorios {
@@ -311,19 +308,19 @@ iframe {
 
 .produtos img {
   max-width: 100px;
+  margin: 10%;
   border: solid #7f7f80 3px;
   border-radius: 100%;
   box-shadow: grey 1px 1px 5px;
-  margin: 10%;
 }
 
 .produtos {
-  box-shadow: grey 1px 1px 5px;
-  text-align: center;
-  padding: 20px;
   width: 230px;
-  background-color: white;
   margin: 1%;
+  padding: 20px;
+  text-align: center;
+  box-shadow: grey 1px 1px 5px;
+  background-color: white;
   border-radius: 5px;
 }
 
@@ -332,21 +329,26 @@ iframe {
   text-transform: uppercase;
 }
 
+.produtos p {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
 .img-produto {
   width: 150px;
   height: 150px;
 }
 
 .acesse {
-  text-transform: uppercase;
-  background-color: #ed6d19;
   width: 100px;
   height: 25px;
   padding: 3px;
   margin: 8px auto;
-  border-radius: 5px;
+  text-transform: uppercase;
   color: white;
   font-weight: 600;
+  background-color: #ed6d19;
+  border-radius: 5px;
 }
 
 #conteudo-contato {
@@ -361,27 +363,32 @@ iframe {
 .formulario h2,
 .formulario p,
 form {
-  text-align: right;
   margin: 1%;
+  text-align: right;
+}
+
+textarea {
+  padding: 4px 8px;
+  resize: none;
 }
 
 .localizacao h2,
 .localizacao p,
 .localizacao iframe {
-  text-align: left;
   margin: 1%;
+  text-align: left;
 }
 
 button {
-  border: none;
-  background-color: #ed6d19;
   height: 30px;
   margin-left: 40px;
-  color: white;
+  padding-inline: 8px;
+  border: none;
   cursor: pointer;
   border-radius: 5px;
   box-shadow: gray 1px 1px 5px;
-  padding-inline: 8px;
+  background-color: #ed6d19;
+  color: white;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -399,7 +406,7 @@ button:hover {
 .rodape-conteudo {
   display: flex;
   align-items: center;
-  margin: 10px 0 10px 10%;
+  margin: 16px 0 16px 10%;
 }
 
 .rodape-conteudo ul {
@@ -409,6 +416,10 @@ button:hover {
 #logo-rodape {
   max-width: 150px;
   margin: 3%;
+}
+
+.menu-rodape {
+  margin-right: 24px;
 }
 
 .menu-rodape a {
@@ -439,4 +450,45 @@ button:hover {
   background-color: #7f7f80;
   text-align: center;
   height: 40px;
+  padding-top: 8px;
 }
+
+/* Design Responsivo */
+/* 3ª parte: Media Queries.
+Regras com ajustes para a visulaização do site
+em tamanhos de telas maiores (breakpoints) */
+
+/* Para telas a partir de 720px */
+@media screen and (min-width: 720px) {
+
+  .topo {
+    padding-left: 8%;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    z-index: 1000;
+  }
+
+  .topo div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  #destaque {
+    max-height: 280px;
+  }
+
+  .card-conteudo {
+    flex-direction: column;
+  }
+
+  .card-conteudo figure {
+    height: 16vh;
+    width: 200px;
+  }
+
+  .card-conteudo figcaption {
+    bottom: 4px;
+  }
+
+} /* fim do 720px */
