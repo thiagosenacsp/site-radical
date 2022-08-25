@@ -460,7 +460,6 @@ em tamanhos de telas maiores (breakpoints) */
 
 /* Para telas a partir de 720px */
 @media screen and (min-width: 720px) {
-
   .topo {
     padding-left: 8%;
     width: 100%;
@@ -483,12 +482,106 @@ em tamanhos de telas maiores (breakpoints) */
   }
 
   .card-conteudo figure {
-    height: 16vh;
+    height: 20vh;
     width: 200px;
   }
 
   .card-conteudo figcaption {
     bottom: 4px;
   }
-
 } /* fim do 720px */
+
+@media screen and (min-width: 750px) {
+  #frase {
+    margin-top: 5%;
+  }
+
+  .conteudo-info {
+    padding-top: 15%;
+  }
+
+  .conteudo-info p {
+    margin: 6%;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  nav {
+    padding-left: 16%;
+  }
+
+  #frase {
+    margin-top: 7%;
+  }
+
+  .card-conteudo {
+    flex-direction: row;
+    margin: 20px 20px 60px 20px;
+    margin-inline: 10%;
+  }
+
+  .card-conteudo figure {
+    width: 40%;
+    margin: 30px;
+  }
+
+  .card,
+  iframe,
+  .conteudo-info {
+    max-width: 850px;
+    margin: auto;
+  }
+
+  /*  .pac-reserva {
+    margin-left: 36%;
+  } */
+
+  .rodape-conteudo {
+    margin-left: 20%;
+  }
+
+  /*  .assinatura p {
+    padding-top: 1%;
+  } */
+}
+
+@media screen and (min-width: 920px) {
+
+  nav {
+    padding-left: 18%;
+  }
+
+  #frase {
+    margin-top: 14%;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+
+  #frase {
+    margin-top: 25%;
+  }
+
+  nav {
+    padding-left: 32%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+
+  #frase {
+    margin-top: 25%;
+  }
+
+  nav {
+    padding-left: 45%;
+  }
+
+  .conteudo-info {
+    padding-top: 10%;
+  }
+
+  .card-conteudo figcaption {
+    bottom: 4px;
+  }
+}
