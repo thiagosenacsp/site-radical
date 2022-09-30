@@ -349,6 +349,55 @@ iframe {
   font-weight: 600;
   background-color: #ed6d19;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 70%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal-header h2 {
+  margin: 0;
+}
+
+.modal-header {
+  background: #06632e;
+  padding: 15px;
+  color: #fff;
+}
+
+.modal-body {
+  padding: 10px 20px;
+}
+
+.closeBtn {
+  margin-bottom: 8px;
+  margin-right: 4px;
+  font-size: 24px;
+  color: #fff;
+  float: right;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+  color: #ed6d19;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 #conteudo-contato {
@@ -546,7 +595,6 @@ em tamanhos de telas maiores (breakpoints) */
 }
 
 @media screen and (min-width: 920px) {
-
   nav {
     padding-left: 18%;
   }
@@ -557,7 +605,6 @@ em tamanhos de telas maiores (breakpoints) */
 }
 
 @media screen and (min-width: 1124px) {
-
   #frase {
     margin-top: 25%;
   }
@@ -568,7 +615,6 @@ em tamanhos de telas maiores (breakpoints) */
 }
 
 @media screen and (min-width: 1500px) {
-
   #frase {
     margin-top: 25%;
   }

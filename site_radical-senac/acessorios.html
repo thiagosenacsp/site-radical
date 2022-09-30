@@ -47,16 +47,28 @@
           </div>
           <h4>BOTA</h4>
           <p>Bota para caminhada e trekking.</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
-
+        <!-- Modal - Início -->
+        <div id="simpleModal" class="modal-overlay">
+          <div class="modal-content">
+            <div class="modal-header">
+              <span class="closeBtn">x</span>
+              <h2>Meu modal</h2>
+            </div>
+            <div class="modal-body">
+              <p>Conteúdo</p>
+            </div>
+          </div>
+        </div>
+        <!-- Modal - Fim -->
         <div class="produtos">
           <div class="img-produto">
             <img src="imagens/mochila.jpg" alt="" />
           </div>
           <h4>CARGUEIRA PARA TREKKING</h4>
           <p>Cargueira de 80 litros em várias cores.</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
 
         <div class="produtos">
@@ -65,7 +77,7 @@
           </div>
           <h4>LUVAS PARA TREKKING</h4>
           <p>Luvas para trekking meio dedo.</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
       </div>
 
@@ -76,7 +88,7 @@
           </div>
           <h4>CAPACETE</h4>
           <p>Capacete para bike.</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
 
         <div class="produtos">
@@ -85,7 +97,7 @@
           </div>
           <h4>SQUEEZE</h4>
           <p>Squeeze para bike.</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
 
         <div class="produtos">
@@ -94,7 +106,7 @@
           </div>
           <h4>SAPATILHA</h4>
           <p>Sapatilha para bike</p>
-          <div class="acesse">Acesse</div>
+          <div class="acesse"><a id="modalBtn">Acesse</a></div>
         </div>
       </div>
     </main>
@@ -140,5 +152,41 @@
         </p>
       </div>
     </footer>
+
+    <script>
+      // Get modal element
+      var modal = document.getElementById("simpleModal");
+      // Get open modal button
+      var modalBtn = document.getElementById("modalBtn");
+      // Get close button
+      var closeBtn = document.getElementsByClassName("closeBtn")[0];
+
+      // Listen for open click
+      modalBtn.addEventListener("click", openModal);
+      // Listen for close click
+      closeBtn.addEventListener("click", closeModal);
+      // Listen for outside click
+      window.addEventListener("click", outsideClick);
+
+      // Open modal
+      function openModal() {
+        modal.style.display = "block";
+      }
+
+      // Close modal
+      function closeModal() {
+        modal.style.display = "none";
+      }
+
+      // Click outside and close
+      function outsideClick(e) {
+        if (e.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
+
+<!--ref: https://codepen.io/mngu/pen/oGzxXN-->
+<!--ref: https://softauthor.com/make-custom-popup-modal-window-in-vanilla-javascript/-->
